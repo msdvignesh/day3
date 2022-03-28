@@ -1,6 +1,6 @@
 package code.hotel;
 
-public class GasBill {
+public class GasBill implements gasBillMethods {
 	
 	float totalAmount;
 

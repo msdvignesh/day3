@@ -1,6 +1,6 @@
 package code.classRoom;
 
-public class ClassRoom {
+public class ClassRoom implements classRoomMethods{
 	
 	public void teach(LearningGuitar learningGuitar) {
 		System.out.println("ClassRoom teaches guitar");

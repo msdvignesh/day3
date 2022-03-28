@@ -5,7 +5,7 @@ import code.hotel.GasBill;
 import code.hotel.LPG;
 import code.person.Person;
 
-public class FoodRestaurant {
+public class FoodRestaurant extends Restaurant implements FoodRestaurantMethods {
 	
 	private String name;
 	FeedbackForm feedBackFormObj;

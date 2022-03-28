@@ -7,7 +7,7 @@ import code.restaurant.Food;
 import code.shirt.Shirt;
 import code.toy.Toy;
 
-public class Person {
+public class Person extends personMethods {
 
 	private String name, gender;
 

@@ -2,7 +2,7 @@ package code.hotel;
 
 import code.person.Person;
 
-public class Room {
+public class Room implements roomMethods {
 
 	private int roomNo;
 	
