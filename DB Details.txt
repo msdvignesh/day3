@@ -1,0 +1,19 @@
+driver : org.hsqldb.jdbc.JDBCDriver
+jdbc:hsqldb:mem:.
+SA
+password : <blank>
+
+driver : org.hsqldb.jdbc.JDBCDriver
+
+url : jdbc:hsqldb:hsql://localhost/
+username : SA
+password : <blank>
+
+
+ java -cp ../lib/hsqldb.jar org.hsqldb.server.Server --database.0 file:mydb --dbname.0 xdb
+java -cp ../lib/hsqldb.jar org.hsqldb.server.Server --database.0 file:mydb --dbname.0 xdb
+
+
+select * from information_schema table_constraints where table_name='dept';
+
+select * from information_schema table_constraint where constraint_name = 'constraint name';
