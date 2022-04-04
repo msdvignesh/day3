@@ -1,0 +1,19 @@
+Java project
+	Source code
+	dependencies/libraries 
+	test cases
+	reporting 
+	provides project a structure(assets/resources/directories)
+	configuration
+	task runner
+	
+Maven is open sources by Apache
+
+Maven provides structure for a project and manages-configurable POM
+Characteristics
+	Convention over configuration-src/main/java
+	consistent
+	configurable
+IDE agnostic
+IDE supported
+declarative dependency management

@@ -1,0 +1,57 @@
+https://www.javatpoint.com/jpa-object-relational-mapping- Object Relational Mapping (ORM) is a functionality which is used to develop and maintain a relationship between an object and relational database by mapping an object state to database column. It is capable to handle various database operations easily such as inserting, updating, deleting etc.
+Mapping Directions
+Mapping Directions are divided into two parts: -
+
+Unidirectional relationship - In this relationship, only one entity can refer the properties to another. It contains only one owing side that specifies how an update can be made in the database.
+Bidirectional relationship - This relationship contains an owning side as well as an inverse side. So here every entity has a relationship field or refer the property to other entity.
+Types of Mapping
+Following are the various ORM mappings: -
+
+
+One-to-one - This association is represented by @OneToOne annotation. Here, instance of each entity is related to a single instance of another entity.
+One-to-many - This association is represented by @OneToMany annotation. In this relationship, an instance of one entity can be related to more than one instance of another entity.
+Many-to-one - This mapping is defined by @ManyToOne annotation. In this relationship, multiple instances of an entity can be related to single instance of another entity.
+Many-to-many - This association is represented by @ManyToMany annotation. Here, multiple instances of an entity can be related to multiple instances of another entity. In this mapping, any side can be the owing side.
+
+https://www.tutorialspoint.com/hibernate/orm_overview.htm
+ORM stands for Object-Relational Mapping (ORM) is a programming technique for converting data between relational databases and object oriented programming languages such as Java, C#, etc.
+
+[4:09 pm, 03/04/2022] msdvignesh: https://youtu.be/7E1M1W9o7PA
+[4:10 pm, 03/04/2022] msdvignesh: https://www.youtube.com/watch?v=Yv2xctJxE-w&list=PL4AFF701184976B25
+[4:11 pm, 03/04/2022] msdvignesh: https://www.youtube.com/watch?v=2axtcJHP0RA
+
+An ORM system has the following advantages over plain JDBC −
+
+Sr.No.	Advantages
+1	Let’s business code access objects rather than DB tables.
+2	Hides details of SQL queries from OO logic.
+3	Based on JDBC 'under the hood.'
+4	No need to deal with the database implementation.
+5	Entities based on business concepts rather than database structure.
+6	Transaction management and automatic key generation.
+7	Fast development of application.
+An ORM solution consists of the following four entities −
+
+Sr.No.	Solutions
+1	An API to perform basic CRUD operations on objects of persistent classes.
+2	A language or API to specify queries that refer to classes and properties of classes.
+3	A configurable facility for specifying mapping metadata.
+4	A technique to interact with transactional objects to perform dirty checking, lazy association fetching, and other optimization functions.
+
+
+
+
+
+
+Hibernate
+
+	1. An entity in Java is a simple POJO- class representing. Ex- class Student with data members such as rollno, name, age, gender
+	2. Each row is an instance of the entity
+	3. An entity can be defined using @Entity annotation. By default, entity name is the name of the class - can be changed using name = '' property.@Entity(name='studentTable')
+	4. Each entity must have a primary key- defined by @Id. Ids can be generated using different methods using @GeneratedValue(strategy = GenerationType.AUTO/TABLE/SEQUENCE/IDENTITY) 
+	5. Entity name = Table name. Can be changed using @Table(name=''). Can use the scheme='' for mentioning the schema
+	6. @Column(name = '', length=,nullable=,unique=)
+	7. @Transient - Makes a field/data member non-persistent.
+	8. @Temporal saves temporal data - @Temporal.Date saves the data in date format-used for timestamp
+	9.
+	
